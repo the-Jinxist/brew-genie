@@ -5,20 +5,20 @@
 class AskGenie < Formula
   desc "CLI app to suggest prompted commands"
   homepage "https://github.com/the-Jinxist/cmd_genie"
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.1/cmd_genie_Darwin_x86_64.tar.gz"
-      sha256 "6e3183b22d9897ab53f11c975d3477233361fe6a102ce2388d39a8ad5540d1bf"
+      url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.2/cmd_genie_Darwin_x86_64.tar.gz"
+      sha256 "35e63bc1b7089141e3ae0b9dd028d10512680f9883d9b7d7d6aa03e9d0b6e777"
 
       def install
         bin.install "cmd_genie"
       end
     end
     on_arm do
-      url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.1/cmd_genie_Darwin_arm64.tar.gz"
-      sha256 "8957803c9868d3bf131d444dd460bb77bd2cffba9567d6e94697532f289679db"
+      url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.2/cmd_genie_Darwin_arm64.tar.gz"
+      sha256 "ddb3d8a6fbb573169fa0a4924a171f486cf31a78fb25c7565e22b99c3c08f0bc"
 
       def install
         bin.install "cmd_genie"
@@ -29,8 +29,8 @@ class AskGenie < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.1/cmd_genie_Linux_x86_64.tar.gz"
-        sha256 "6efecb280baaf19e8300e769a5cc337fbb20e452bab67921bb176baa1d58469a"
+        url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.2/cmd_genie_Linux_x86_64.tar.gz"
+        sha256 "19a6abbeb2ac7fc709bc3ac1ac61c51e0e3153410d1b1ae78eb3bd8504dfa900"
 
         def install
           bin.install "cmd_genie"
@@ -39,8 +39,8 @@ class AskGenie < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.1/cmd_genie_Linux_arm64.tar.gz"
-        sha256 "fdd9ea950a8d07a79fb2d58ad58e6bf2080e98f577d507126e7c8c389ca09173"
+        url "https://github.com/the-Jinxist/cmd_genie/releases/download/v0.5.2/cmd_genie_Linux_arm64.tar.gz"
+        sha256 "3421146224275a3e062f4c6c668bee3336d4b4a40e3e6c15c494da4119b0d15e"
 
         def install
           bin.install "cmd_genie"
